@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>thumbs.js Github Event Log</title>
+    <link rel="stylesheet" href="github-events.css"/>
+</head>
+
+<body>
+
+<div id="GithubLog" data-thumbs-el>
+    <div class="collectionView"
+         data-thumbs-view="EventsList"
+         data-thumbs-args="collection:collection, ItemView:EventView, itemContainer:$eventsContainer">
+        <table class="events">
+            <thead><tr><th>Event Type</th><th>Created At</th></tr></thead>
+            <tbody data-thumbs-id="$eventsContainer"></tbody>
+        </table>
+    </div>
+</div>
+
+<div id="credits">
+    Created by
+    <br/>
+    <a href="http://github.com/ruzz311">Russell Madsen</a>.
+</div>
+
+<script src="../../components/json2/json2.js"></script>
+<script src="../../components/jquery/jquery.js"></script>
+<script src="../../components/underscore/underscore.js"></script>
+<script src="../../components/backbone/backbone.js"></script>
+<script src="../../thumbs.js"></script>
+<script src="github-events.js"></script>
+
+<!-- Templates -->
+
+<script type="text/template" id="item-template">
+    <tr class="event" data-thumbs-el>
+        <td class="type" data-thumbs-bind="type" data-thumbs-format="icon"></td>
+        <td class="created" data-thumbs-bind="created_at" data-thumbs-format="formatter"></td>
+    </tr>
+</script>
+
+</body>
+</html>

@@ -5,7 +5,12 @@
         "_": true,
         "thumbs": true,
         "Thumbs": true,
-        "Backbone": true
+        "Backbone": true,
+        "beforeEach": true,
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "sinon": true
     },
     "browser" : true,
     "bitwise" : false,

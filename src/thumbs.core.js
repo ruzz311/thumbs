@@ -162,6 +162,7 @@
         // @include ./thumbs.router.js
         // @include ./thumbs.view.js
         // @include ./thumbs.templateView.js
+        // @include ./thumbs.collectionView.js
 
         return Thumbs;
     }
